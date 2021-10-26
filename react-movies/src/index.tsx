@@ -4,11 +4,14 @@ import "./index.css";
 import Simple from "./Simple";
 import Expression from "./Expression";
 import Conditional from "./Conditional";
+import ConditionalIf from "./ConditionalsIf";
+import MapExample from "./MapExample";
+import ConditionalidSeveralComponents from "./ConditionalidSeveralComponents";
 import reportWebVitals from "./reportWebVitals";
 
 ReactDOM.render(
   <React.StrictMode>
-    <Conditional />
+    <ConditionalidSeveralComponents />
   </React.StrictMode>,
   document.getElementById("root")
 );
