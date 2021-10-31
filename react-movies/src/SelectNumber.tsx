@@ -10,7 +10,7 @@ const SelectNumber = (props: selectNumberProps) => {
       >
         {arr.map((_, index) => (
           <option key={index + 1} value={index + 1}>
-            {index + 1}
+            {props.selectContant(index + 1)}
           </option>
         ))}
       </select>
@@ -23,6 +23,8 @@ export default SelectNumber;
 interface selectNumberProps {
   maxValue: number;
   onSelected(valus: number): void;
+  //control from the parent
+  selectContant(value: number): React.ReactNode;
 }
 
 SelectNumber.defaultProps = {

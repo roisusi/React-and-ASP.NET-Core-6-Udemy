@@ -2,6 +2,7 @@ import { parse } from "path";
 import { useState } from "react";
 import Simple from "./Simple";
 import SelectNumber from "./SelectNumber";
+import ProjectContent from "./ProjectContent";
 const ConditionalidSeveralComponents = () => {
   const [selectedRate, setSelectedRate] = useState(1);
 
@@ -31,8 +32,20 @@ const ConditionalidSeveralComponents = () => {
       <h1>Conditional if Example</h1>
 
       <div>Rate this website</div>
-      <SelectNumber maxValue={6} onSelected={setSelectedRate} />
-      <div>{diplayResult()}</div>
+      <SelectNumber
+        maxValue={6}
+        onSelected={setSelectedRate}
+        selectContant={(value) => {
+          return `Select ${value}`;
+        }}
+      />
+      {/* <div>{diplayResult()}</div> */}
+      <ProjectContent buttonPart={<>This is the end</>}>
+        <button onClick={() => console.log("clicked")}>
+          This is Button as a Paramater
+        </button>
+        <Simple />
+      </ProjectContent>
     </>
   );
 };
