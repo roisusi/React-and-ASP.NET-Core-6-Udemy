@@ -11,4 +11,6 @@ for version - dotnet --version
 <br>
 for Entity Framework Core
 <br>
-install - dotnet tool install --global dotnet-ef
+Install - dotnet tool install --global dotnet-ef
+<br>
+Update - dotnet tool update --global dotnet-ef
