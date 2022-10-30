@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "HKdut8mIvaicwVBsEAA49GBjDihxncn/jVHK+m+NkxJsbXtq1a9aJ8MmDIuk6tNvVm6oF2X1S+XAOC2IUyOTLQ==",
+  "dgSpecHash": "F/RncHL2TDbh06/7p6Uyd7uHqwYIoSHJVaZXz23ev67AijaLWudIif8g0X6Ejg9zwFVAJ05lRPpPv9yrE8JpJw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\rsusi\\Desktop\\Dev\\Asp.net-Udemy\\React-and-ASP.NET-Core-6-Udemy\\MoviesApi\\MoviesApi\\MoviesApi.csproj",
+  "projectFilePath": "C:\\Users\\rsusi\\Desktop\\Dev\\Asp.net-Udemy\\React-and-ASP.NET-Core-6-Udemy\\MoviesAPI\\MoviesAPI\\MoviesAPI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\rsusi\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
     "C:\\Users\\rsusi\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",

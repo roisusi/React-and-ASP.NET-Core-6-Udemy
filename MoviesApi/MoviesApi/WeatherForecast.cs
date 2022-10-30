@@ -1,4 +1,4 @@
-namespace MoviesApi
+namespace MoviesAPI
 {
     public class WeatherForecast
     {

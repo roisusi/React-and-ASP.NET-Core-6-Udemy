@@ -1,6 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 
-namespace MoviesApi.Controllers
+namespace MoviesAPI.Controllers
 {
     [ApiController]
     [Route("[controller]")]

@@ -231,11 +231,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\rsusi\\Desktop\\Dev\\Asp.net-Udemy\\React-and-ASP.NET-Core-6-Udemy\\MoviesApi\\MoviesApi\\MoviesApi.csproj",
-      "projectName": "MoviesApi",
-      "projectPath": "C:\\Users\\rsusi\\Desktop\\Dev\\Asp.net-Udemy\\React-and-ASP.NET-Core-6-Udemy\\MoviesApi\\MoviesApi\\MoviesApi.csproj",
+      "projectUniqueName": "C:\\Users\\rsusi\\Desktop\\Dev\\Asp.net-Udemy\\React-and-ASP.NET-Core-6-Udemy\\MoviesAPI\\MoviesAPI\\MoviesAPI.csproj",
+      "projectName": "MoviesAPI",
+      "projectPath": "C:\\Users\\rsusi\\Desktop\\Dev\\Asp.net-Udemy\\React-and-ASP.NET-Core-6-Udemy\\MoviesAPI\\MoviesAPI\\MoviesAPI.csproj",
       "packagesPath": "C:\\Users\\rsusi\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\rsusi\\Desktop\\Dev\\Asp.net-Udemy\\React-and-ASP.NET-Core-6-Udemy\\MoviesApi\\MoviesApi\\obj\\",
+      "outputPath": "C:\\Users\\rsusi\\Desktop\\Dev\\Asp.net-Udemy\\React-and-ASP.NET-Core-6-Udemy\\MoviesAPI\\MoviesAPI\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
