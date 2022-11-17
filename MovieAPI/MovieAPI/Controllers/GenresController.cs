@@ -12,10 +12,12 @@ namespace MoviesAPI.Controllers
     public class GenresController : ControllerBase
     {
         private readonly IRepository repository;
+        private readonly ILogger logger;
 
-        public GenresController(IRepository repository)
+        public GenresController(IRepository repository, ILogger<Genre>logger)
         {
             this.repository = repository;
+            this.logger = logger;
         }
 
         //For both options
@@ -24,6 +26,7 @@ namespace MoviesAPI.Controllers
         [HttpGet("/allgenres")] //overrride all the api/genres to just /allgenres
         public async Task<List<Genre>> Get()
         {
+            logger.LogInformation("Getting all the genrea");
             return await repository.GetAllGenres();
         }
         ////[HttpGet("example")] //api/genres/example?id=1
@@ -60,20 +63,33 @@ namespace MoviesAPI.Controllers
          * -StringLength
          */
 
+        /*
+         * Logger hierarchy :
+         * Critical
+         * Error
+         * Warning
+         * Information
+         * Debug
+         * Trace
+         */
+
         public IActionResult Get(int id, [BindRequired] string param2) //BindRequired - must have
         {
             var genre = repository.GetGenreById(id);
 
             if (genre == null)
             {
+                logger.LogWarning($"Genre with id {id} not found");
                 return NotFound();
             }
-            return Ok(genre);
+            return NoContent();
         }
         [HttpPost]
-        public ActionResult Post([FromBody] Genre genre)
+        public async Task<IActionResult> Post([FromBody] Genre genre)
         {
-            return NoContent();
+            repository.AddGenre(genre);
+            var data = await repository.GetAllGenres();
+            return  Ok(data);
         }
         [HttpPut]
         public ActionResult Put([FromBody] Genre genre)
